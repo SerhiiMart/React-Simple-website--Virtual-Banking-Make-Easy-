@@ -1,11 +1,16 @@
-import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from  'react-router-dom'
+import Home from './pages';
+import SigninPage from './pages/signin';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Header about something </h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/signin' component={SigninPage} exact />
+      </Switch>
+    </Router>
   );
 }
 
