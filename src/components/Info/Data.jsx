@@ -44,6 +44,6 @@ export const homeObjThree = {
   imgStart: false,
   img: '/images/svg-3.svg',
   alt: 'car',
-  primary: false,
+  primary: false, 
   darkText: true
 };
